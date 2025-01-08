@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | EcoBazar</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/shop.css">
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="shortcut icon" href="./image/fav.png" type="image/x-icon" />
+  
+</head>
+<body>
+  <!-- Header Starts here -->
+  <header>
+    <!-- headerTop starts here -->
+    <section id="headerTop">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="d-flex align-items-center justify-content-center justify-content-lg-start">
+              <span><i class="bi bi-geo-alt"></i></span>Store Location:
+              Lincoln- 344, Illinois, Chicago, USA
+            </p>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block text-end text-align-center">
+            <div>
+              <ul class="d-flex flex-wrap nowrap justify-content-end">
+                <li>
+                  <form>
+                    <select>
+                      <option>Eng</option>
+                      <option>Bng</option>
+                    </select>
+                    <select>
+                      <option>USD</option>
+                      <option>BDT</option>
+                    </select>
+                  </form>
+                </li>
+                <li><a href="#">Sign In / Sign Up</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- headerTop Ends here -->
+    <!-- headerMiddle starts here -->
+    <!-- Large device manu Bar starts -->
+    <section id="headerMiddle" class="d-none d-lg-block">
+      <div class="container">
+        <div class="row">
+          <div class="logo col">
+            <a href="index.html"><img src="./image/Logo.png" class="img-fluid" alt="" /></a>
+          </div>
+          <div class="search col-5 text-center">
+            <form>
+              <span><i class="bi bi-search"></i></span>
+              <input type="search" placeholder="Search">
+              <button class="searchbtn" type="button">Search</button>
+            </form>
+          </div>
+          <div class="col">
+            <div class="quickLinks text-end ">
+              <ul class="">
+                <li class="d-inline-block"><a href="#"><i class="bi bi-heart"></i></a></li>
+                <li class="d-inline-block">
+                  <a href="#">
+                    <div class="d-flex cart">
+                      <div class="cartIcon">
+                        <div class="cartIconInner">
+                          <button class="align-items-center" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                              class="bi bi-handbag"></i></button>
+                          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                              <h4>S (2)</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <div class="cart-item align-items-center">
+                                <div class="row align-items-center product">
+                                  <div class="col-4"><img class="img-fluid" src="./image/Capsicum.png" alt=""></div>
+                                  <div class="col-4">
+                                    <h6>Capsicum</h6>
+                                    <p>1 kg x <span>12.00</span></p>
+                                  </div>
+                                  <div class="col-4">
+                                    <i class="bi bi-x"></i>
+                                  </div>
+                                </div>
+                                <div class="row align-items-center product">
+                                  <div class="col-4"><img class="img-fluid" src="./image/Eggplant.png" alt=""></div>
+                                  <div class="col-4">
+                                    <h6>Eggplant</h6>
+                                    <p>1 kg x <span>14.00</span></p>
+                                  </div>
+                                  <div class="col-4">
+                                    <i class="bi bi-x"></i>
+                                  </div>
+                                </div>
+                                <div class="cartCalc">
+                                  <div class="d-flex justify-content-between">
+                                    <span class="cardQuantity">2 Product</span>
+                                    <span class="totalPrice">$26.00</span>
+                                  </div>
+                                  <!-- <a class="checkout d-block text-center" href="checkout.html">Checkout</a>
+                                <a class="cart d-block text-center" href="cart.html">Go To Cart</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="cartCount">2</span>
+                      </div>
+                      <div class="text">
+                        <p>Shopping cart:</p>
+                        <h4>$57.00</h4>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Large device manu Bar Ends-->
+    <!-- Small Device ManuBar Starts Here -->
+    <section id="smManu" class="d-lg-none d-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col smMenuSidebar">
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+              aria-controls="offcanvasMenu">
+              <i class="bi bi-list"></i>
+            </button>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu"
+              aria-labelledby="offcanvasMenuLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel"><img src="./image/Logo.png" alt=""></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="#" data-bs-toggle="dropdown">Home</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Shop</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Clothing</a></li>
+                      <li><a class="dropdown-item" href="#">Electronics</a></li>
+                      <li><a class="dropdown-item" href="#">Accessories</a></li>
+                    </ul>
+                  </li>
+                  <li class="list-group-item"><a href="#">Blog</a></li>
+                  <li class="list-group-item"><a href="#">About Us</a></li>
+                  <li class="list-group-item"><a href="#">Contact Us</a></li>
+                  <li class="list-group-item"><a href="#">About Us</a></li>
+                  <li class="list-group-item">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Categories</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Fresh Fruit</a></li>
+                      <li><a class="dropdown-item" href="#">Vegetable</a></li>
+                      <li><a class="dropdown-item" href="#">Cooking</a></li>
+                      <li><a class="dropdown-item" href="#">Snacks</a></li>
+                      <li><a class="dropdown-item" href="#">Beverages</a></li>
+                      <li><a class="dropdown-item" href="#">Beauty & Health</a></li>
+                      <li><a class="dropdown-item" href="#">Bread & Bekary</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <ul class="d-flex flex-wrap nowrap justify-content-center">
+                <li>
+                  <form>
+                    <select>
+                      <option>Eng</option>
+                      <option>Bng</option>
+                    </select>
+                    <select>
+                      <option>USD</option>
+                      <option>BDT</option>
+                    </select>
+                  </form>
+                </li>
+                <li><a href="#">Log In</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col smLogo text-center">
+            <a href="#"><img src="./image/Logo.png" alt="Logo" /></a>
+          </div>
+          <div class="col smSearchIcon text-end">
+            <button type="button" id="searchSmallIcon"><i class="bi bi-search"></i></button>
+          </div>
+
+        </div>
+      </div>
+      <!-- Small Device Search Starts Here -->
+      <div class="smallSearch"">
+        <button class=" closebtn"><i class="bi bi-x-lg"></i></button>
+        <form>
+          <span><i class="bi bi-search"></i></span>
+          <input type="search" placeholder="Search">
+          <button>Search</button>
+        </form>
+        <div class="searchResult">
+          <p class="result">Total Result 150:</p>
+          <div class="row">
+            <div class="col-6">
+              <div class="productCard">
+                <div class="productImage">
+                  <a href="#">
+                    <img src="./image/Eggplant.png" class="img-fluid" alt="">
+                  </a>
+                </div>
+                <div class="productContent align-items-center text-center">
+                  <p>Eggplawnt</p>
+                  <h3>$14.99</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="productCard">
+                <div class="productImage">
+                  <a href="#">
+                    <img src="./image/Capsicum.png" class="img-fluid" alt="">
+                  </a>
+                </div>
+                <div class="productContent align-items-center text-center">
+                  <p>Capsicum</p>
+                  <h3>$14.99</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="productCard">
+                <div class="productImage">
+                  <a href="#">
+                    <img src="./image/Fresh Cauliflower.png" class="img-fluid" alt="">
+                  </a>
+                </div>
+                <div class="productContent align-items-center text-center">
+                  <p>Fresh Caulislower</p>
+                  <h3>$14.99</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="productCard">
+                <div class="productImage">
+                  <a href="#">
+                    <img src="./image/Surjapur Mango.png" class="img-fluid" alt="">
+                  </a>
+                </div>
+                <div class="productContent align-items-center text-center">
+                  <p>Surjapur Mango</p>
+                  <h3>$14.99</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="productCard">
+                <div class="productImage">
+                  <a href="#">
+                    <img src="./image/Green Chilli.png" class="img-fluid" alt="">
+                  </a>
+                </div>
+                <div class="productContent align-items-center text-center">
+                  <p>Green Chilli</p>
+                  <h3>$14.99</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="productCard">
+                <div class="productImage">
+                  <a href="#">
+                    <img src="./image/Green lettuce.png" class="img-fluid" alt="">
+                  </a>
+                </div>
+                <div class="productContent align-items-center text-center">
+                  <p>Green lettuce</p>
+                  <h3>$14.99</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Small Device Search Ends Here -->
+    </section>
+
+    <!-- Small Device ManuBar Ends Here -->
+    <!-- headerMiddle Ends here -->
+    <!-- headerBottom starts here -->
+    <section id="headerBottom" class="d-none d-lg-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 d-flex">
+            <div class="dropdown">
+              <a class="all-categories dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-list"></i>All Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Fresh Fruit</a></li>
+                <li><a class="dropdown-item" href="#">Vegetable</a></li>
+                <li><a class="dropdown-item" href="#">Cooking</a></li>
+                <li><a class="dropdown-item" href="#">Snacks</a></li>
+                <li><a class="dropdown-item" href="#">Beverages</a></li>
+                <li><a class="dropdown-item" href="#">Beauty & Health</a></li>
+                <li><a class="dropdown-item" href="#">Bread & Bekary</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+            </div>
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Fresh Fruit</a></li>
+                <li><a class="dropdown-item" href="#">Vegetable</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+            </div>
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+              </a>
+            </div>
+            <div class="dropdown">
+              <a class="href=" #" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+            </div>
+            <div class="">
+              <a class="href=" #" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact Us
+              </a>
+            </div>
+          </div>
+          <div class="col-2 text-end">
+            <a class="href=" #" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-telephone-outbound"></i>
+              <a href="tel:219555-0114">(219) 555-0114</a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HeaderBottomSm Starts Here -->
+    <section id="headerBottomSm" class="d-block d-lg-none">
+      <div class="container">
+        <div class="d-flex justify-content-evenly">
+          <a><i class="bi bi-house"></i></a>
+          <a><i class="bi bi-basket"></i></a>
+          <a><i class="bi bi-heart"></i></a>
+          <a><i class="bi bi-people"></i></a>
+          <a><i class="bi bi-database-dash"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- HeaderBottomSm Ends Here -->
+    <!-- headerBottom Ends here -->
+  </header>
+  <!-- Header Ends here -->
+  <!-- Main Content Starts Here -->
+   <main>
+    <section id="homeBanner">
+      <div class="shopBanner">
+        <img src="./image/shopImage/shopBanner.png" alt="">
+      </div>
+      <div class="container">
+        <div class="shopText row">
+          <div class="d-flex">
+            <div class="homeIcon"><i class="bi bi-house-door"></i></div>
+            <a href="#">Categories</a>
+            <a href="#">Vegetables</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="upperContent">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 filter">
+            <div class="filterContent">
+                <span><a href="#">Filter</a></span>
+                <img src="./image/shopImage/svg/Filter 24px.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   </main>
+  <!-- Main Content Ends Here -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/shop.js"></script>
+</body>
+</html>
