@@ -952,3 +952,17 @@ img {
       max-width: 25%;
   }
 }
+
+#BannerTwo{
+  margin: 100px 0;
+}
+
+/* Footer Starts here */
+#footer {
+  background-image: url(../image/footer/Footer\ \(1\).png);
+  background-color: var(--gren-gray-scale-900);
+  background-position: center;
+  background-size: cover;
+
+}
+/* Footer Ends here */
