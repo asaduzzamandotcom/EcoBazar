@@ -848,7 +848,7 @@ button {
 }
 #productFilter .pcard .cartIcon:hover{
   background-color: var(--branding-success);
-  color: #000;
+  color: var(--gray-scale-white);
 }
 /* ProductFilter Section Ends Here  */
 
